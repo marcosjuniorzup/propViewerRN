@@ -4,7 +4,7 @@ import {SectionList, StyleSheet, Text, View} from 'react-native';
 const SectionListBasics = (props) => {
   const convertToSectionSchema = (key, index) => ({
     title: key,
-    data: propsValues[index],
+    data: [propsValues[index]],
   });
 
   const propsValues = Object.values(props).map((propValue) =>
